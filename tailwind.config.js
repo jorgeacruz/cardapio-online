@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       backgroundImage:{
         "home":"url('/assets/bg.png')"
+      },
+      fontFamily:{
+        'sans':['Poppins','sans-serif']
       }
     },
   },
