@@ -23,11 +23,27 @@
     <meta property="og:site_name" content="DevBuruger" /> 
 
   <link rel="stylesheet" href="./styles/output.css" />
-
-  <title>Dev Burguer - A melhor hamburgueria dev!</title>
+  <title>Bar Esperança - A Melhor comida do Nordeste!</title>
 </head>
 <body>
-  
+  <menu class="bg-black h-[60px] w-full flex items-center justify-center">
+    <div class="w-full max-w-7xl flex items-center justify-between">
+        <div>
+            <img src="./assets/logo.png" alt="Bar Esperança" title="Bar Esperança" class="w-12"/>
+        </div>
+        <div class="w-[400px] flex justify-between">
+            <a href="#" class="text-white"> Home</a>
+            <a href="#" class="text-white"> Quem Somos</a>
+            <a href="#" class="text-white"> Cardapio</a>
+            <a href="#" class="text-white"> Contato</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram text-white w-8 h-8"></i>
+            <i class="fa-brands fa-facebook text-white w-8 h-8"></i>
+            <i class="fa-brands fa-twitter text-white w-8 h-8"></i>
+        </div>
+    </div>
+  </menu>
   <!-- HEADER -->
   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
     <div class="w-full h-full flex flex-col justify-center items-center">
@@ -37,13 +53,13 @@
         class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
       />
       <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-        Dev Burguer
+        Bar Esperança
       </h1>
 
-      <span class="text-white font-medium">Rua dev 10, Campo Grande - MS</span>
+      <span class="text-white font-medium">Rua Esperança 12 - Maré | RJ</span>
 
       <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
+        <span class="text-white font-medium">Seg á Dom - 16:00 as 22:00</span>
       </div>
 
     </div>
@@ -57,7 +73,7 @@
   <!-- INICIO MENU -->
   <div id="menu">
     
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-12 mx-auto max-w-7xl px-2 mb-16">
 
       <!-- PRODUTO ITEM -->
       <div class="flex gap-2">
@@ -240,6 +256,66 @@
     </div>
     <!-- FIM GRID BEBIDAS -->
 
+    <!-- GRID BEBIDAS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        
+        <!-- BEBIDA ITEM -->
+          <div class="flex gap-2 w-full">
+            <img 
+              src="./assets/refri-1.png"
+              alt="Coca lata"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+    
+            <div class="w-full">
+              <p class="font-bold">Coca lata</p>
+    
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 6</p>
+                <button 
+                  class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                  data-name="Coca lata"
+                  data-price="6"
+                >
+                  <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+              </div>
+    
+            </div>
+    
+          </div>
+          <!-- FIM BEBIDA ITEM --> 
+  
+        <!-- BEBIDA ITEM -->
+        <div class="flex gap-2 w-full">
+          <img 
+            src="./assets/refri-2.png"
+            alt="Guaraná lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+  
+          <div class="w-full">
+            <p class="font-bold">Guaraná lata</p>
+  
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6</p>
+              <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Guarana lata"
+                data-price="6"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+  
+          </div>
+  
+        </div>
+        <!-- FIM BEBIDA ITEM -->         
+  
+      </div>
+      <!-- FIM GRID BEBIDAS -->
+  
   </div>
   <!-- FIM MENU -->
 
